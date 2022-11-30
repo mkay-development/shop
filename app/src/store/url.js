@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 export const useNavStore = defineStore("url", {
   state() {
     return {
-      baseurl: "http://www.pwa-template.de",
+      baseurl: "http://www.vite-shop.de",
     };
   },
   actions: {},

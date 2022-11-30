@@ -1,4 +1,4 @@
-# Docker - pwa-template.de
+# Docker - vite-shop.de
 
 ## Techstack:
 - VueJs

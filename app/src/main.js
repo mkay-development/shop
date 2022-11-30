@@ -17,7 +17,7 @@ library.add(faEdit, faPlus, faBars);
 import plausible from "./plugins/plausible";
 
 const plausibleOptions = {
-  domain: "www.pwa-template.de",
+  domain: "www.vite-shop.de",
   apiHost: "https://tracking.jmartz.gmbh",
   hashMode: false,
   trackLocalhost: false,

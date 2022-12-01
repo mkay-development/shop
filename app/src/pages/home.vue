@@ -1,16 +1,12 @@
 <template>
   <div class="vp-home">
-    <img alt="Vue logo" class="mx-auto" src="../assets/logo.png" />
-    <welcome></welcome>
+    <div v-for="(item, index) in [1, 2, 3]">
+      <categories-preview :identifier="item" :items="3"></categories-preview>
+    </div>
   </div>
 </template>
 
-<script>
-import welcome from "../components/welcome.vue";
-export default {
-  name: "Homepage",
-  components: {
-    welcome: welcome,
-  },
-};
+<script setup>
+import { onMounted, ref } from "vue";
+import categoriesPreview from "../components/categories/preview.vue";
 </script>

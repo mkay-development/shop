@@ -7,12 +7,18 @@ import { createPinia } from "pinia";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 /* import specific icons */
-import { faPlus, faEdit, faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlus,
+  faEdit,
+  faBars,
+  faRightFromBracket,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faEdit, faPlus, faBars);
+library.add(faEdit, faPlus, faBars, faUser,faRightFromBracket);
 
 import plausible from "./plugins/plausible";
 
@@ -30,7 +36,7 @@ app.component("fa", FontAwesomeIcon);
 app.use(routes);
 const pinia = createPinia();
 pinia.use(({ store }) => {
-  store.router = router;
+  store.router = routes;
 });
-app.use(pinia);
+app.use(createPinia());
 app.mount("#app");

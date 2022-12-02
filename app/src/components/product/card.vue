@@ -4,13 +4,25 @@
       src="https://via.placeholder.com/480x320.png?text=MkaY+Development"
       alt=""
     />
-    <h2>{{ props.identifier }}</h2>
-    <h2>{{ product }}</h2>
+    <h2 class="font-bold mt-2">{{ product.name }}</h2>
+    <p class="text-sm">{{ product.desc }}</p>
+    <div class="actions flex justify-between mt-3">
+      <button
+        class="bg-gray-200 rounded-lg px-2 py-2"
+        @click="add(product.id, 1)"
+      >
+        add to Cart
+      </button>
+      <span class="price px-2 py-2 text-red-600">12 €</span>
+    </div>
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { onMounted, ref } from "vue";
+import { useCheckoutStore } from "@/store/checkout";
+
+let checkoutStore = useCheckoutStore();
 
 let props = defineProps({
   identifier: {
@@ -24,6 +36,14 @@ let product = ref({});
 onMounted(() => {
   load();
 });
+
+let add = function (id, qty) {
+  checkoutStore.add({
+    id: id,
+    qty: qty,
+  });
+  checkoutStore.save();
+};
 
 let load = function () {
   let that = this;

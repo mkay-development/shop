@@ -2,7 +2,8 @@
   <div>
     <div class="grid grid-cols-6 gap-3">
       <div class="col-span-6">
-        <h2 class="font-bold text-lg">Katgorie: {{ category.name }}</h2>
+        <h2 class="font-bold text-lg mt-3">Katgorie: {{ category.name }}</h2>
+        <p>{{ category.desc }}</p>
       </div>
       <div class="col-span-6 md:col-span-2" v-for="(item, index) in products">
         <product-card :identifier="item.id"></product-card>

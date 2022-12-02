@@ -59,7 +59,7 @@ export const useUserStore = defineStore("user", {
             return response.json();
           })
           .then(function (data) {
-            if (data.user.id) {
+            if (data.user) {
               that.user = data.user;
               that.loggedin = true;
             }

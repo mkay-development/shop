@@ -11,14 +11,24 @@ import {
   faPlus,
   faEdit,
   faBars,
+  faShoppingCart,
   faRightFromBracket,
   faUser,
+  faMinus,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faEdit, faPlus, faBars, faUser,faRightFromBracket);
+library.add(
+  faEdit,
+  faPlus,
+  faMinus,
+  faBars,
+  faUser,
+  faRightFromBracket,
+  faShoppingCart
+);
 
 import plausible from "./plugins/plausible";
 

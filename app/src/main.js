@@ -14,13 +14,22 @@ import {
   faShoppingCart,
   faRightFromBracket,
   faUser,
+  faQuestion,
   faMinus,
+  faArrowRight,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
+
+import { faDhl } from "@fortawesome/free-brands-svg-icons";
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(
+  faQuestion,
+  faArrowLeft,
+  faArrowRight,
+  faDhl,
   faEdit,
   faPlus,
   faMinus,

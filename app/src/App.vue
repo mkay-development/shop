@@ -1,8 +1,10 @@
 <template>
   <div class="app">
-    <header class="mx-auto max-w-5xl py-2">
-      <header-general></header-general>
-    </header>
+    <div class="w-full bg-gray-500">
+      <header class="mx-auto max-w-5xl py-2">
+        <header-general></header-general>
+      </header>
+    </div>
     <main class="mx-auto max-w-5xl bg-white px-2 py-2 mt-2 min-h-screen">
       <router-view></router-view>
     </main>
@@ -23,10 +25,10 @@ export default {
     "footer-general": footer,
   },
   watch: {
-    $route: function(){
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-  }
+    $route: function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+  },
 };
 </script>
 

@@ -5,7 +5,9 @@ import UserLogin from "../pages/user/login.vue";
 import UserLogout from "../pages/user/logout.vue";
 import Impressum from "../pages/impressum.vue";
 import CheckoutCart from "../pages/checkout/cart.vue";
+import CheckoutPayment from "../pages/checkout/payment.vue";
 import CheckoutShipping from "../pages/checkout/shipping.vue";
+import CheckoutConfirm from "../pages/checkout/confirm.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -14,6 +16,8 @@ const routes = [
   { path: "/logout", component: UserLogout },
   { path: "/checkout/cart", component: CheckoutCart },
   { path: "/checkout/shipping", component: CheckoutShipping },
+  { path: "/checkout/payment", component: CheckoutPayment },
+  { path: "/checkout/confirm", component: CheckoutConfirm },
 ];
 const router = createRouter({
   history: createWebHistory(),

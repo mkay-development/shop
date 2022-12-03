@@ -9,7 +9,7 @@
     <div class="actions flex justify-between mt-3">
       <button
         class="bg-gray-200 rounded-lg px-2 py-2"
-        @click="add(product.id, 1)"
+        @click="add(product.id, { qty: 1, price: product.price })"
       >
         add to Cart
       </button>
@@ -37,10 +37,11 @@ onMounted(() => {
   load();
 });
 
-let add = function (id, qty) {
+let add = function (id, { qty, price }) {
   checkoutStore.add({
     id: id,
     qty: qty,
+    price: price,
   });
   checkoutStore.save();
 };

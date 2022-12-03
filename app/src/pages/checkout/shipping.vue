@@ -39,6 +39,7 @@
             <input
               type="radio"
               name="shipping-method"
+              :checked="method == 'dhl'"
               @click="method = 'dhl'"
             />
           </div>
@@ -51,6 +52,7 @@
               type="radio"
               name="shipping-method"
               @click="method = 'dhl-express'"
+              :checked="method == 'dhl-express'"
             />
             <p>Preis: 10€</p>
           </div>
@@ -64,7 +66,7 @@
         >
         <input
           type="text"
-          v-model="form.firstname"
+          v-model="address.firstname"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -75,7 +77,7 @@
         >
         <input
           type="text"
-          v-model="form.lastname"
+          v-model="address.lastname"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -86,7 +88,7 @@
         >
         <input
           type="text"
-          v-model="form.street"
+          v-model="address.street"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -97,7 +99,7 @@
         >
         <input
           type="text"
-          v-model="form.number"
+          v-model="address.number"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -106,7 +108,7 @@
         <label class="text-sm font-bold block px-2 py-2 bg-gray-300">PLZ</label>
         <input
           type="text"
-          v-model="form.postcode"
+          v-model="address.postcode"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -117,7 +119,7 @@
         >
         <input
           type="text"
-          v-model="form.city"
+          v-model="address.city"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -128,7 +130,7 @@
         >
         <input
           type="text"
-          v-model="form.country"
+          v-model="address.country"
           class="w-full px-2 py-2 bg-gray-200"
           id=""
         />
@@ -162,21 +164,11 @@ import { storeToRefs } from "pinia";
 
 let router = useRouter();
 let shippingStore = useShippingStore();
-let { method } = storeToRefs(shippingStore);
-
-let form = ref({
-  firstname: "",
-  lastname: "",
-  street: "",
-  number: "",
-  postcode: "",
-  city: "",
-  country: "",
-});
+let { method, address } = storeToRefs(shippingStore);
 let valid = ref(false);
 
 watch(
-  form,
+  address,
   function (value) {
     shippingStore.updateAddress(value);
   },

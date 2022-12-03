@@ -1,5 +1,28 @@
 <template>
   <div class="grid grid-cols-6 gap-3 mt-5 mb-5">
+    <div class="col-span-6 flex justify-between mt-5">
+      <div class="back">
+        <router-link
+          to="/checkout/cart"
+          class="bg-gray-300 rounded-lg px-2 py-2"
+        >
+          <fa icon="arrow-left" />
+          Back
+        </router-link>
+      </div>
+      <div class="headline text-center">
+        <h2 class="font-bold text-lg">Shipping Method</h2>
+      </div>
+      <div class="next">
+        <router-link
+          to="/checkout/payment"
+          class="bg-gray-300 rounded-lg px-2 py-2"
+        >
+          Next
+          <fa icon="arrow-right" />
+        </router-link>
+      </div>
+    </div>
     <div class="col-span-6">
       <h2 class="font-bold text-lg">Versandart</h2>
       <p>

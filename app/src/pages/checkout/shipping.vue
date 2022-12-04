@@ -201,5 +201,9 @@ let next = function () {
 
 onMounted(function () {
   shippingStore.load();
+
+  if (method != "") {
+    valid.value = true;
+  }
 });
 </script>

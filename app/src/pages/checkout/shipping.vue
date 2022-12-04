@@ -31,7 +31,7 @@
     </div>
 
     <div class="col-span-6 md:col-span-4">
-      <div class="grid grid-cols-6">
+      <div class="grid grid-cols-6" v-if="address">
         <div class="col-span-6 md:col-span-3 w-full text-center">
           <div class="px-2 py-2 w-full h-full bg-gray-300 mt-4">
             <fa :icon="['fab', 'dhl']" class="fa-5x" />

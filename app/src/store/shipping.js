@@ -28,7 +28,11 @@ export const useShippingStore = defineStore("shipping", {
       this.save();
     },
     load: function () {
-      this.address = JSON.parse(localStorage.getItem("shipping-address"));
+      if (localStorage.getItem("shipping-address")) {
+        this.address = JSON.parse(localStorage.getItem("shipping-address"));
+      } else {
+        localStorage.setItem("shipping-address", JSON.stringify(this.address));
+      }
       this.method = localStorage.getItem("shipping");
     },
   },

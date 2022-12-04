@@ -30,12 +30,14 @@
       </p>
     </div>
 
-    <div class="col-span-6 md:col-span-4">
-      <div class="grid grid-cols-6" v-if="address">
-        <div class="col-span-6 md:col-span-3 w-full text-center">
-          <div class="px-2 py-2 w-full h-full bg-gray-300 mt-4">
+    <div class="col-span-6 md:col-span-2">
+      <h2 class="font-bold text-lg mb-2">Versandmethode</h2>
+      <div class="grid grid-cols-6 gap-3" v-if="address">
+        <div class="col-span-6 w-full text-center">
+          <div class="px-2 py-2 w-full h-full bg-gray-300">
             <fa :icon="['fab', 'dhl']" class="fa-5x" />
             <h2>DHL</h2>
+            <p class="font-bold">Preis: 5€</p>
             <input
               type="radio"
               name="shipping-method"
@@ -44,23 +46,33 @@
             />
           </div>
         </div>
-        <div class="col-span-6 md:col-span-3 w-full text-center">
-          <div class="px-2 py-2 w-full h-full bg-gray-300 mt-4">
+        <div class="col-span-6 w-full text-center">
+          <div class="px-2 py-2 w-full h-full bg-gray-300 mt-2">
             <fa :icon="['fab', 'dhl']" class="fa-5x" />
             <h2>DHL Express</h2>
+            <p class="font-bold">Preis: 10€</p>
             <input
               type="radio"
               name="shipping-method"
               @click="method = 'dhl-express'"
               :checked="method == 'dhl-express'"
             />
-            <p>Preis: 10€</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-span-6 md:col-span-2 mt-4">
+    <div class="col-span-6 md:col-span-2">
+      <h2 class="font-bold text-lg mb-3">Versandadresse</h2>
       <div class="form-group">
+        <label class="text-sm font-bold block px-2 py-2 bg-gray-300"
+          >Anrede</label
+        >
+        <select v-model="address.surename" class="w-full px-2 py-2 bg-gray-200">
+          <option value="woman">Frau</option>
+          <option value="man">Mann</option>
+        </select>
+      </div>
+      <div class="form-group mt-3">
         <label class="text-sm font-bold block px-2 py-2 bg-gray-300"
           >Vorname</label
         >
@@ -93,6 +105,8 @@
           id=""
         />
       </div>
+    </div>
+    <div class="col-span-6 md:col-span-2 mt-0 md:mt-6">
       <div class="form-group mt-3">
         <label class="text-sm font-bold block px-2 py-2 bg-gray-300"
           >Nummer</label
@@ -128,12 +142,9 @@
         <label class="text-sm font-bold block px-2 py-2 bg-gray-300"
           >Land</label
         >
-        <input
-          type="text"
-          v-model="address.country"
-          class="w-full px-2 py-2 bg-gray-200"
-          id=""
-        />
+        <select v-model="address.country" class="w-full px-2 py-2 bg-gray-200">
+          <option value="de">Deutschland</option>
+        </select>
       </div>
     </div>
     <div class="col-span-6 flex justify-between mt-5">

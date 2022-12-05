@@ -8,6 +8,7 @@ import CheckoutCart from "../pages/checkout/cart.vue";
 import CheckoutPayment from "../pages/checkout/payment.vue";
 import CheckoutShipping from "../pages/checkout/shipping.vue";
 import CheckoutConfirm from "../pages/checkout/confirm.vue";
+import CheckoutAccount from "../pages/checkout/account.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -18,6 +19,7 @@ const routes = [
   { path: "/checkout/shipping", component: CheckoutShipping },
   { path: "/checkout/payment", component: CheckoutPayment },
   { path: "/checkout/confirm", component: CheckoutConfirm },
+  { path: "/checkout/account", component: CheckoutAccount },
 ];
 const router = createRouter({
   history: createWebHistory(),

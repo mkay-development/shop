@@ -20,7 +20,7 @@
       <p class="block text-center">Jetzt schnell und einfach zur Kasse</p>
       <div class="actions w-full flex">
         <router-link
-          to="/checkout/shipping"
+          to="/checkout/account"
           class="bg-gray-300 rounded-lg px-2 py-2 mx-auto mt-3"
           >Kasse</router-link
         >

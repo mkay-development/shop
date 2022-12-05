@@ -3,7 +3,7 @@
     <div class="col-span-6 flex justify-between mt-5">
       <div class="back">
         <router-link
-          to="/checkout/cart"
+          to="/checkout/account"
           class="bg-gray-300 rounded-lg px-2 py-2"
         >
           <fa icon="arrow-left" />
@@ -150,7 +150,7 @@
     <div class="col-span-6 flex justify-between mt-5">
       <div class="back">
         <router-link
-          to="/checkout/cart"
+          to="/checkout/account"
           class="bg-gray-300 rounded-lg px-2 py-2"
         >
           <fa icon="arrow-left" />

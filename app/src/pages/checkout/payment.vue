@@ -69,7 +69,7 @@ onMounted(function () {
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.src =
-    "https://www.paypal.com/sdk/js?client-id=AWBerNBuxn2MlQAGvRbbxOh6xdDisk597oNihJ9faj6XGuBd_XnchIUCGpdES5r2PgBZfnUcoMMEhF_T&components=buttons&locale=de_DE";
+    "https://www.paypal.com/sdk/js?client-id=AWBerNBuxn2MlQAGvRbbxOh6xdDisk597oNihJ9faj6XGuBd_XnchIUCGpdES5r2PgBZfnUcoMMEhF_T&components=buttons&locale=de_DE&currency=EUR";
   document.head.appendChild(script);
 
   setTimeout(function () {

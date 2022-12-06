@@ -1,14 +1,15 @@
 <template>
   <div class="app">
     <div class="w-full bg-gray-500">
-      <header class="mx-auto max-w-5xl py-2">
+      <header class="max-w-5xl py-2 mx-auto">
         <header-general></header-general>
       </header>
     </div>
-    <main class="mx-auto max-w-5xl bg-white px-2 py-2 mt-2 min-h-screen">
+    <main class="max-w-5xl min-h-screen px-2 py-2 mx-auto mt-2 bg-white">
+      <messages></messages>
       <router-view></router-view>
     </main>
-    <footer class="mx-auto max-w-5xl px-2 py-2 mt-2">
+    <footer class="max-w-5xl px-2 py-2 mx-auto mt-2">
       <footer-general></footer-general>
     </footer>
   </div>
@@ -16,6 +17,7 @@
 <script>
 import header from "./components/header.vue";
 import footer from "./components/footer.vue";
+import messages from "./components/messages.vue";
 
 import "./tailwind.css";
 export default {
@@ -23,6 +25,7 @@ export default {
   components: {
     "header-general": header,
     "footer-general": footer,
+    "messages": messages,
   },
   watch: {
     $route: function () {

@@ -16,8 +16,11 @@ import {
   faUser,
   faQuestion,
   faMinus,
+  faLock,
   faArrowRight,
+  faCheck,
   faArrowLeft,
+  faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faDhl } from "@fortawesome/free-brands-svg-icons";
@@ -28,7 +31,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faQuestion,
   faArrowLeft,
+  faTruckFast,
+  faCheck,
   faArrowRight,
+  faLock,
   faDhl,
   faEdit,
   faPlus,

@@ -36,6 +36,7 @@ export const useUserStore = defineStore("user", {
           return response.json();
         })
         .then(function (data) {
+          console.log(data);
           if (data.token) {
             that.token = data.token;
             that.loggedin = true;

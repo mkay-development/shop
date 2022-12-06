@@ -3,9 +3,13 @@
     <img
       src="https://via.placeholder.com/480x320.png?text=MkaY+Development"
       alt=""
-    />
-    <h2 class="font-bold mt-2">{{ product.name }}</h2>
-    <p class="text-sm">{{ product.desc }}</p>
+    >
+    <h2 class="font-bold mt-2">
+      {{ product.name }}
+    </h2>
+    <p class="text-sm">
+      {{ product.desc }}
+    </p>
     <div class="actions flex justify-between mt-3">
       <button
         class="bg-gray-200 rounded-lg px-2 py-2"
@@ -19,47 +23,47 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-import { useCheckoutStore } from "@/store/checkout";
+import { onMounted, ref } from 'vue'
+import { useCheckoutStore } from '@/store/checkout'
 
-let checkoutStore = useCheckoutStore();
+const checkoutStore = useCheckoutStore()
 
-let props = defineProps({
+const props = defineProps({
   identifier: {
     type: Number,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 
-let product = ref({});
+const product = ref({})
 
 onMounted(() => {
-  load();
-});
+  load()
+})
 
-let add = function (id, { qty, price }) {
+const add = function (id, { qty, price }) {
   checkoutStore.add({
-    id: id,
-    qty: qty,
-    price: price,
-  });
-  checkoutStore.save();
-};
+    id,
+    qty,
+    price
+  })
+  checkoutStore.save()
+}
 
-let load = function () {
-  let that = this;
-  fetch("https://backend.mkay-development.de/api/product/" + props.identifier, {
-    method: "GET",
+const load = function () {
+  const that = this
+  fetch('https://backend.mkay-development.de/api/product/' + props.identifier, {
+    method: 'GET',
     headers: {
-      Authorization: "Bearer: " + localStorage.getItem("token"),
-      "Content-Type": "application/json",
-    },
+      Authorization: 'Bearer: ' + localStorage.getItem('token'),
+      'Content-Type': 'application/json'
+    }
   })
     .then(function (response) {
-      return response.json();
+      return response.json()
     })
     .then(function (data) {
-      product.value = data.item;
-    });
-};
+      product.value = data.item
+    })
+}
 </script>

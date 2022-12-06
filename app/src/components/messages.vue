@@ -4,7 +4,11 @@
   >
     <p>
       Dies ist ein kleiner Ecommerce Shop zum lernen wie man so ein Projekt mit Ecommerce Features umsetzen kann.
-      <a href="https://github.com/mkay-development/shop" class="text-blue-600">Zum Github Repo</a></p>
+      <a
+        href="https://github.com/mkay-development/shop"
+        class="text-blue-600"
+      >Zum Github Repo</a>
+    </p>
     <fa icon="plus" />
   </div>
 </template>

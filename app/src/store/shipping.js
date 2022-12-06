@@ -1,39 +1,39 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
-export const useShippingStore = defineStore("shipping", {
-  state() {
+export const useShippingStore = defineStore('shipping', {
+  state () {
     return {
-      method: "dhl",
+      method: 'dhl',
       address: {
-        firstname: "",
-        lastname: "",
-        street: "",
-        number: "",
-        postcode: "",
-        city: "",
-        country: "",
-      },
-    };
+        firstname: '',
+        lastname: '',
+        street: '',
+        number: '',
+        postcode: '',
+        city: '',
+        country: ''
+      }
+    }
   },
   actions: {
     updateAddress: function (address) {
-      this.address = address;
-      localStorage.setItem("shipping-address", JSON.stringify(address));
+      this.address = address
+      localStorage.setItem('shipping-address', JSON.stringify(address))
     },
     save: function () {
-      localStorage.setItem("shipping", this.method);
+      localStorage.setItem('shipping', this.method)
     },
     update: function (value) {
-      this.method = value;
-      this.save();
+      this.method = value
+      this.save()
     },
     load: function () {
-      if (localStorage.getItem("shipping-address")) {
-        this.address = JSON.parse(localStorage.getItem("shipping-address"));
+      if (localStorage.getItem('shipping-address')) {
+        this.address = JSON.parse(localStorage.getItem('shipping-address'))
       } else {
-        localStorage.setItem("shipping-address", JSON.stringify(this.address));
+        localStorage.setItem('shipping-address', JSON.stringify(this.address))
       }
-      this.method = localStorage.getItem("shipping");
-    },
-  },
-});
+      this.method = localStorage.getItem('shipping')
+    }
+  }
+})

@@ -11,10 +11,15 @@
         </router-link>
       </div>
       <div class="headline text-center">
-        <h2 class="font-bold text-lg">Confirm</h2>
+        <h2 class="font-bold text-lg">
+          Confirm
+        </h2>
       </div>
       <div class="next">
-        <span @click="confirm()" class="bg-gray-300 rounded-lg px-2 py-2">
+        <span
+          class="bg-gray-300 rounded-lg px-2 py-2"
+          @click="confirm()"
+        >
           Confirm
           <fa icon="arrow-right" />
         </span>
@@ -31,7 +36,10 @@
         </router-link>
       </div>
       <div class="next">
-        <span @click="confirm()" class="bg-gray-300 rounded-lg px-2 py-2">
+        <span
+          class="bg-gray-300 rounded-lg px-2 py-2"
+          @click="confirm()"
+        >
           Confirm
           <fa icon="arrow-right" />
         </span>

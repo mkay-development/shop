@@ -4,20 +4,19 @@
       <div class="col-span-6">
         <h2><strong>Angaben gemäß § 5 TMG</strong></h2>
         <p>
-          Jonathan Martz <br />
-          Othestrasse 2<br />
-          51702 Bergneustadt <br /><br />
+          Jonathan Martz <br>
+          Othestrasse 2<br>
+          51702 Bergneustadt <br><br>
         </p>
         <h2><strong>Vertreten durch: </strong></h2>
-        <p>Jonathan Martz<br /><br /></p>
+        <p>Jonathan Martz<br><br></p>
         <h2><strong>Kontakt:</strong></h2>
         <p>
-          E-Mail: <a href="mailto:impresum@jmartz.de"> impressum@jmartz.de </a
-          ><br /><br />
+          E-Mail: <a href="mailto:impresum@jmartz.de"> impressum@jmartz.de </a><br><br>
         </p>
         <h2><strong>Haftungsausschluss: </strong></h2>
         <p>
-          <br /><br /><strong>Haftung für Inhalte</strong><br /><br />
+          <br><br><strong>Haftung für Inhalte</strong><br><br>
           Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für
           die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir
           jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7
@@ -31,8 +30,7 @@
           Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
           Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden
           von entsprechenden Rechtsverletzungen werden wir diese Inhalte
-          umgehend entfernen. <br /><br /><strong>Haftung für Links</strong
-          ><br /><br />
+          umgehend entfernen. <br><br><strong>Haftung für Links</strong><br><br>
           Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
           Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
           fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
@@ -43,8 +41,7 @@
           permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
           konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
           Bekanntwerden von Rechtsverletzungen werden wir derartige Links
-          umgehend entfernen. <br /><br /><strong>Urheberrecht</strong
-          ><br /><br />
+          umgehend entfernen. <br><br><strong>Urheberrecht</strong><br><br>
           Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
           Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
           Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
@@ -56,25 +53,23 @@
           Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf
           eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
           entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
-          werden wir derartige Inhalte umgehend entfernen. <br /><br /><strong
-            >Datenschutz</strong
-          ><br /><br />
+          werden wir derartige Inhalte umgehend entfernen. <br><br><strong>Datenschutz</strong><br><br>
           Die Nutzung unserer Webseite ist in der Regel ohne Angabe
           personenbezogener Daten möglich. Soweit auf unseren Seiten
           personenbezogene Daten (beispielsweise Name, Anschrift oder
           eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets
           auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
-          Zustimmung nicht an Dritte weitergegeben. <br />
+          Zustimmung nicht an Dritte weitergegeben. <br>
           Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei
           der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein
           lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
-          möglich. <br />
+          möglich. <br>
           Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
           Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich
           angeforderter Werbung und Informationsmaterialien wird hiermit
           ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich
           ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung
-          von Werbeinformationen, etwa durch Spam-Mails, vor.<br />
+          von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
         </p>
         <p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
         <p>
@@ -100,15 +95,15 @@
         <p>
           Der Provider der Seiten erhebt und speichert automatisch Informationen
           in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns
-          übermittelt. Dies sind:<br /><br />
-          · Browsertyp und Browserversion<br />
-          · verwendetes Betriebssystem<br />
-          · Referrer URL<br />
-          · Hostname des zugreifenden Rechners<br />
-          · Uhrzeit der Serveranfrage<br />
-          · IP-Adresse<br /><br /><br />
+          übermittelt. Dies sind:<br><br>
+          · Browsertyp und Browserversion<br>
+          · verwendetes Betriebssystem<br>
+          · Referrer URL<br>
+          · Hostname des zugreifenden Rechners<br>
+          · Uhrzeit der Serveranfrage<br>
+          · IP-Adresse<br><br><br>
           Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
-          vorgenommen.<br />
+          vorgenommen.<br>
           Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO,
           der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder
           vorvertraglicher Maßnahmen gestattet.

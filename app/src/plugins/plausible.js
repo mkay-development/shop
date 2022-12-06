@@ -1,12 +1,12 @@
 // plugins/plausible.js
-import Plausible from 'plausible-tracker';
+import Plausible from 'plausible-tracker'
 
 export default {
   install: (app, options) => {
-    const { enableAutoPageviews } = Plausible(options);
+    const { enableAutoPageviews } = Plausible(options)
 
-    enableAutoPageviews();
+    enableAutoPageviews()
 
-    app.provide('plausible');
-  },
-};
+    app.provide('plausible')
+  }
+}

@@ -1,10 +1,10 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
-export const useNavStore = defineStore("url", {
-  state() {
+export const useNavStore = defineStore('url', {
+  state () {
     return {
-      baseurl: "http://www.vite-shop.de",
-    };
+      baseurl: 'http://www.vite-shop.de'
+    }
   },
-  actions: {},
-});
+  actions: {}
+})
